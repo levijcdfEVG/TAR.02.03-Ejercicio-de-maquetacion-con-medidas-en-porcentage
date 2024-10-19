@@ -1,5 +1,9 @@
+html {
+    width: 1260px;
+}
+
 /* Contenedores principales */
-body{
+body {
     width: 1260px;
     height: 500px;
     margin-top: 45px;
@@ -7,7 +11,7 @@ body{
 }
 
 /* Contenedores anidados */
-body > :nth-child(1){
+body > :nth-child(1) {
     width: 61.90%; /* (780px / 1260px) * 100 = 61.90% */
     padding-left: 0.79%; /* (10px / 1260px) * 100 = 0.79% */
     padding-right: 0.79%; /* (10px / 1260px) * 100 = 0.79% */
@@ -18,7 +22,7 @@ body > :nth-child(1){
     float: left;
 }
 
-body > :nth-child(2){
+body > :nth-child(2) {
     width: 26.98%; /* (340px / 1260px) * 100 = 26.98% */
     height: 70%; /* (350px / 500px) * 100 = 70% */
     margin-left: 1.59%; /* (20px / 1260px) * 100 = 1.59% */
@@ -30,68 +34,61 @@ body > :nth-child(2){
     float: left;
 }
 
-footer{
+footer {
     height: 20%; /* (100px / 500px) * 100 = 20% */
     width: 100%; /* (1260px / 1260px) * 100 = 100% */
     background-color: yellow;
     clear: both;
 }
 
-
 /* Contenidos de la caja izquierda */ 
-form{
+form {
     padding-left: 5.56%; /* (70px / 1260px) * 100 = 5.56% */
-    margin-top: 1em;
+    margin-top: 2em; /* se eliminó el margen duplicado */
     margin-bottom: 1em;
-    margin-top: 2em;
     background-color: blue;
 }
 
-
 /* Contenidos del formulario */
-form > input, label{
-    display: block; /* Hace con que los elemento tipo input de dentro del form tenga propriedades de elemento de bloque */
+form > input, 
+form > label {
+    display: block; /* Hace que los elementos de tipo input dentro del form tengan propiedades de bloque */
 }
 
-#centrar > input[type="submit"]{
+#centrar > input[type="submit"] {
     width: 11.90%; /* (150px / 1260px) * 100 = 11.90% */
     background-color: #D8D8D8;
     height: 2em;
     margin: 2px;
 }
 
-form > input[type="text"]{
+form > input[type="text"], 
+form > input[type="email"] {
     width: 38.89%; /* (490px / 1260px) * 100 = 38.89% */
     padding-left: 0.79%; /* (10px / 1260px) * 100 = 0.79% */
 }
 
-form > input[type="email"]{
-    width: 38.89%; /* (490px / 1260px) * 100 = 38.89% */
-    padding-left: 0.79%; /* (10px / 1260px) * 100 = 0.79% */
-}
-
-form > label{
+form > label {
     color: white;
 }
 
-#centrar{
+#centrar {
     width: 50%;
     margin: auto;
 }
 
 /* Contenidos del footer */
-footer > p{
+footer > p {
     color: black;
 }
 
-
 /* Contenidos de la caja derecha */
-body > :nth-child(2) > img{
+body > :nth-child(2) > img {
     width: 11.90%; /* (150px / 1260px) * 100 = 11.90% */
     height: 30%; /* (150px / 500px) * 100 = 30% */
 }
 
-/* Propriedades de etiquetas globales*/
-p{
+/* Propiedades de etiquetas globales */
+p {
     color: wheat;
 }
