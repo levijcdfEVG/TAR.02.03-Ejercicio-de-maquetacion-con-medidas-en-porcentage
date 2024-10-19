@@ -8,13 +8,13 @@ body{
 
 /* Contenedores anidados */
 body > :nth-child(1){
-    width: 780px; /*800 - 10 padding-left - 10 padding-right*/
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 30px;
-    margin-left: 20px;
+    width: 61.90%; /* (780px / 1260px) * 100 = 61.90% */
+    padding-left: 0.79%; /* (10px / 1260px) * 100 = 0.79% */
+    padding-right: 0.79%; /* (10px / 1260px) * 100 = 0.79% */
+    padding-top: 6%; /* (30px / 500px) * 100 = 6% */
+    margin-left: 1.59%; /* (20px / 1260px) * 100 = 1.59% */
     background-color: green;
-    height: 370px; /*400 - 30 padding-top*/
+    height: 74%; /* (370px / 500px) * 100 = 74% */
     float: left;
 }
 
