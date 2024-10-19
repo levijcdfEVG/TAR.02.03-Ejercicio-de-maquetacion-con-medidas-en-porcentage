@@ -40,7 +40,7 @@ footer{
 
 /* Contenidos de la caja izquierda */ 
 form{
-    padding-left: 70px;
+    padding-left: 5.56%; /* (70px / 1260px) * 100 = 5.56% */
     margin-top: 1em;
     margin-bottom: 1em;
     margin-top: 2em;
@@ -54,20 +54,20 @@ form > input, label{
 }
 
 #centrar > input[type="submit"]{
-    width: 150px; 
+    width: 11.90%; /* (150px / 1260px) * 100 = 11.90% */
     background-color: #D8D8D8;
     height: 2em;
     margin: 2px;
 }
 
 form > input[type="text"]{
-    width: 490px; /*Ancho 500 - padding left 10*/
-    padding-left: 10px;
+    width: 38.89%; /* (490px / 1260px) * 100 = 38.89% */
+    padding-left: 0.79%; /* (10px / 1260px) * 100 = 0.79% */
 }
 
 form > input[type="email"]{
-    width: 490px; /*Ancho 500 - padding left 10*/
-    padding-left: 10px;
+    width: 38.89%; /* (490px / 1260px) * 100 = 38.89% */
+    padding-left: 0.79%; /* (10px / 1260px) * 100 = 0.79% */
 }
 
 form > label{
@@ -87,8 +87,8 @@ footer > p{
 
 /* Contenidos de la caja derecha */
 body > :nth-child(2) > img{
-    width: 150px;
-    height: 150px;
+    width: 11.90%; /* (150px / 1260px) * 100 = 11.90% */
+    height: 30%; /* (150px / 500px) * 100 = 30% */
 }
 
 /* Propriedades de etiquetas globales*/
