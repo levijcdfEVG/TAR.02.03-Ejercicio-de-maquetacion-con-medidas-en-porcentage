@@ -1,0 +1,98 @@
+html {
+    width: 1260px;
+}
+
+/* Contenedores principales */
+body {
+    width: 100%;
+    height: 100%;
+    margin-top: 45px;
+    background-color: aqua;
+}
+main{
+    width: 1260px;
+    height: 500px;
+}
+
+/* Contenedores anidados */
+main > :nth-child(1) {
+    width: 61.90%; /* (780px / 1260px) * 100 = 61.90% */
+    padding-left: 0.79%; /* (10px / 1260px) * 100 = 0.79% */
+    padding-right: 0.79%; /* (10px / 1260px) * 100 = 0.79% */
+    padding-top: 30px;
+    margin-left: 1.59%; /* (20px / 1260px) * 100 = 1.59% */
+    background-color: green;
+    height: 370px; /*400 - 30 padding-top*/
+    float: left;
+}
+
+main > :nth-child(2) {
+    width: 26.98%; /* (340px / 1260px) * 100 = 26.98% */
+    height: 350px;/*400 - 50 padding-top*/
+    margin-left: 1.59%; /* (20px / 1260px) * 100 = 1.59% */
+    margin-right: 1.59%; /* (20px / 1260px) * 100 = 1.59% */
+    padding-top: 50px;
+    padding-left: 2.38%; /* (30px / 1260px) * 100 = 2.38% */
+    padding-right: 2.38%; /* (30px / 1260px) * 100 = 2.38% */
+    background-color: blue;
+    float: left;
+}
+
+footer {
+    height: 100px;
+    width: 100%; /* (1260px / 1260px) * 100 = 100% */
+    background-color: yellow;
+    clear: both;
+}
+
+/* Contenidos de la caja izquierda */ 
+form {
+    padding-left: 5.56%; /* (70px / 1260px) * 100 = 5.56% */
+    margin-top: 1em; /* se eliminó el margen duplicado */
+    margin-bottom: 1em;
+    background-color: blue;
+}
+
+/* Contenidos del formulario */
+form > input, 
+form > label {
+    display: block; /* Hace que los elementos de tipo input dentro del form tengan propiedades de bloque */
+}
+
+#centrar > input[type="submit"] {
+    width: 11.90%; /* (150px / 1260px) * 100 = 11.90% */
+    background-color: #D8D8D8;
+    height: 2em;
+    margin: 2px;
+}
+
+form > input[type="text"], 
+form > input[type="email"] {
+    width: 38.89%; /* (490px / 1260px) * 100 = 38.89% */
+    padding-left: 0.79%; /* (10px / 1260px) * 100 = 0.79% */
+}
+
+form > label {
+    color: white;
+}
+
+#centrar {
+    width: 50%;
+    margin: auto;
+}
+
+/* Contenidos del footer */
+footer > p {
+    color: black;
+}
+
+/* Contenidos de la caja derecha */
+main > :nth-child(2) > img {
+    width: 11.90%; /* (150px / 1260px) * 100 = 11.90% */
+    height: 150px;
+}
+
+/* Propiedades de etiquetas globales */
+p {
+    color: wheat;
+}
