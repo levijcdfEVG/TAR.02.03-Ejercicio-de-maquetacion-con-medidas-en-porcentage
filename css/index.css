@@ -1,120 +1,36 @@
-/* Contenedores principales */
-body{
-   
-    height: 500px;
-    margin-top: 45px;
-    background-color: aqua;
-}
-
-/* Contenedores anidados */
-body > :nth-child(2){
-    width: 780px; /*800 - 10 padding-left - 10 padding-right*/
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 30px;
-    margin-left: 20px;
-    background-color: green;
-    height: 370px; /*400 - 30 padding-top*/
-    float: left;
-}
-
-body > :nth-child(3){
-    width: 340px; /*400 - 30 padding-left - 30 padding-right*/
-    height: 350px;/*400 - 50 padding-top*/
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: blue;
-    float: left;
-}
-
-footer{
-    height: 100px;
-    width: 1260px;
-    background-color: yellow;
-    clear: both;
-}
-
-
-/* Contenidos de la caja izquierda */ 
-form{
-    padding-left: 70px;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-top: 2em;
-    background-color: blue;
-}
-
-
-/* Contenidos del formulario */
-form > input, label{
-    display: block; /* Hace con que los elemento tipo input de dentro del form tenga propriedades de elemento de bloque */
-}
-
-#centrar > input[type="submit"]{
-    width: 150px; 
-    background-color: #D8D8D8;
-    height: 2em;
-    margin: 2px;
-}
-
-form > input[type="text"]{
-    width: 490px; /*Ancho 500 - padding left 10*/
-    padding-left: 10px;
-}
-
-form > input[type="email"]{
-    width: 490px; /*Ancho 500 - padding left 10*/
-    padding-left: 10px;
-}
-
-form > label{
-    color: white;
-}
-
-#centrar{
-    width: 50%;
-    margin: auto;
-}
-
-/* Contenidos del footer */
-footer > p{
-    color: black;
-}
-
-
-/* Contenidos de la caja derecha */
-body > :nth-child(3) > img{
-    width: 150px;
-    height: 150px;
-}
-
-/* Propriedades de etiquetas globales*/
-p{
-    color: wheat;
-}
-
-/*
-    Nav
-*/
+/*Estilos BAse*/
 
 nav{
-    background-color: #D8D8D8;
-    color: black;
+    background-color: red;
+    width: 100%;
     text-align: center;
-    margin: 10%;
-    padding: 10%;
+    height: 1em;
+}
+a{
+    display: inline;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    text-align: centert
 
 }
 
-@media (max-width < 1260px){
+
+
+
+/*Cuando pase de la medida de ancho de 1260px, vuelve a los estilos base de la pagina*/
+@media (max-width: 1260px){
     nav{
         background-color: blue;
+        width: 100%;
+        text-align: center;
     }
     a{
         display: block;
         color: red;
+        background-color: black;
+        padding: 10px;
+        text-align: centert
+
     }
 }
